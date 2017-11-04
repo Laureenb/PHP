@@ -1,4 +1,4 @@
-2. Affiche une salutation différente selon l'âge de l'utilisateur.
+<!-- 2. Affiche une salutation différente selon l'âge de l'utilisateur.
 
 Crée un petit formulaire contenant une seule question: "Quel est votre âge ?" (champ de type Number).
 Méthode: GET Affiche un message différent selon la réponse au formulaire.
@@ -7,3 +7,16 @@ Méthode: GET Affiche un message différent selon la réponse au formulaire.
     Si l'âge est entre 12 et 18 ans, affiche "Salut l'ado!"
     Si l'âge est entre 18 et 115 ans, affiche "Salut l'adulte!"
     Si l'âge est supérieur à 115 ans, affiche "Wow! Toujours vivant?"
+ -->
+
+<label for="age_utilisateur">Quel est votre âge ?</label>
+
+<form action="cible.php" method="get">
+
+<p>
+    <input type="number" name="age" id="age"/>
+
+    <input type="submit" value="Valider" />
+</p>
+
+</form>
