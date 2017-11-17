@@ -1,0 +1,19 @@
+.info{
+background: yellow;
+color: green;
+font-weight: bold;
+font-size: 30px;
+}
+
+.alert{
+background: grey;
+color: orange;
+font-style: italic;
+font-size: 60px;
+}
+
+.error{
+background: black;
+color: red;
+font-size: 100px;
+}
