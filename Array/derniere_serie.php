@@ -10,7 +10,6 @@ ensuite, ajoute une ligne en dessous qui efface la ligne contenant "Flash".
 
 <?php
 
-
 $web_development = array(
 	"frontend" => array(),
 	"backend" => array()
@@ -33,6 +32,5 @@ unset($web_development["frontend"][array_search("Flash", $web_development["front
 echo "<pre>";
 print_r ($web_development);
 echo "<pre>";
-
 
 ?>
