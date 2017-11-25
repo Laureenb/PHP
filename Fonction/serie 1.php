@@ -75,4 +75,10 @@ echo "<pre>";
 	}
 }
 
+// Convertis la chaîne suivante: "ARRÊTE DE CRIER JE N'ENTENDS PLUS RIEN!!!" en lettres minuscules.
+
+$parle = "ARRÊTE DE CRIER JE N'ENTENDS PLUS RIEN!!!";
+$parle_min = mb_strtolower($parle);
+echo $parle_min;
+
 ?>

@@ -15,17 +15,27 @@
 
 // On crée la fonction 
 
-function afficher_classe($classe, $message){
+function afficher_classe($message, $classe){
 	echo ('<div class ="'.$classe.'">'.$message.'</div>');
 }
 
 // On déclare les variables des différents types de messages
 
-afficher_classe('info', 'Ceci est un message d\'info');
-afficher_classe('alert', 'Ceci est un message alerte');
-afficher_classe('error', 'Ceci est un message d\'erreur'); 
+afficher_classe('Ceci est un message d\'info', 'info');
+afficher_classe('Ceci est un message alerte', 'alert');
+afficher_classe('Ceci est un message d\'erreur', 'error'); 
     
 // Trouve par toi-même dans la documentation php comment modifier ta fonction pour que, si le second argument n'est pas spécifié, sa valeur soit égale à "info".
+
+function affiche_class ($message, $class="info"){
+echo '<div class ="' . $class . '">' . $message . '</div>';
+}
+
+affiche_class('Ceci est un message d\'info', 'info');
+affiche_class('Ceci est un message alerte', 'alert');
+affiche_class('Ceci est un message erreur', 'error');
+affiche_class('Ceci est un message dont le paramètre class'//pas de classe
+);
 
 ?>
 
