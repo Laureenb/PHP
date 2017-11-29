@@ -16,10 +16,10 @@
      ajoute la formule de politesse.
      pas de faute d'orthographe.
      UX soignée: en faire un vrai produit? ( CSS + typographie + logo ) 
- -->
-<!DOCTYPE html>
-<html>
-<head>
+   -->
+   <!DOCTYPE html>
+   <html>
+   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -27,45 +27,57 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
     <title>Générateur d'excuses pour les parents</title>
-</head>
-<body>
+  </head>
+  <body>
 
-    <h1>Générateur d'excuse</h1>
+    <h1>Générateur d'excuses</h1>
 
-    <h3>Remplissez-les champs pour générer votre excuses</h3>
+    <h3>Remplissez-les champs pour générer votre excuse</h3>
 
-<div id="container_form">
+    <div class="bloc">
+      <div id="container_form">
 
-    <form action="index.php" method="get">
+        <form action="index.php" method="get">
 
-    	<label for="name_enfant">Nom de votre enfant :</label>
-    	<input type="text" name="name_enfant" id="name_enfant"/><br/><br/>
+          <table>
+            <tr>
+              <td>
+               <label for="name_enfant">Nom de votre enfant :</label>
+             </td><td>
+               <input type="text" name="name_enfant" id="name_enfant"/>
+             </td></tr>
+             <tr><td>
+               <label for="name_instit">Nom de l'institutrice/teur :</label>
+             </td><td>
+               <input type="text" name="name_instit" id="name_instit"/>
+             </td></tr>
+           </table>  
 
-    	<label for="name_instit">Nom de l'institutrice/teur :</label>
-    	<input type="text" name="name_instit" id="name_instit"/><br/>
-        <input type="radio" name="genre" value="Madame"/>Madame
-        <input type="radio" name="genre" value="Monsieur"/>Monsieur<br/><br/>
+           <input type="radio" name="genre" value="Madame"/>Madame
+           <input type="radio" name="genre" value="Monsieur"/>Monsieur<br/><br/>
+           
+           <label for="raison">Raison de l'absence : </label><br/><br/>
 
-    	<label for="raison">Raison de l'absence : </label><br/>
-    	<input type="radio" name="raison" value="deces"/>Décès de l'animal de compagnie (ou d'un membre de la famille)<br/>
-        <label for="name_instit">Membre :</label>
-        <input type="text" name="membre" id="membre"/><br/>
-    	<input type="radio" name="raison" value="activite"/>Activité extra-scolaire importante<br/>
-         <label for="name_instit">Activité :</label>
-        <input type="text" name="activite" id="activite"/><br/>
-    	<input type="radio" name="raison" value="stranger"/>Stranger Things passe à la télé<br/><br/>
+           <input type="radio" name="raison" value="deces"/>Décès de l'animal de compagnie (ou d'un membre de la famille) <br/>
+           <label for="name_instit">Membre : </label>
+           <input type="text" name="membre" id="membre"/><br/><br/>
+           <input type="radio" name="raison" value="activite"/>Activité extra-scolaire importante <br/>
+           <label for="name_instit">Activité : </label>
+           <input type="text" name="activite" id="activite"/><br/><br/>
+           <input type="radio" name="raison" value="stranger"/>Stranger Things passe à la télé <br/><br/>
 
-        <input type="submit" value="Valider" id="button"/><br/><br/><br/>
+           <input type="submit" value="Valider" id="button"/><br/><br/><br/>
 
-    </form>
+         </form>
 
-</div>
+       </div>
+     </div>  
 
-<?php
+     <?php
 
-include('excuse.php');
+     include('excuse.php');
 
-?>
+     ?>
 
-</body>
-</html>
+   </body>
+   </html>
