@@ -3,29 +3,23 @@ background: #FAFAFA;
 }
 
 #container_form{
-width: 50%;
-background: #FAFAFA;
-/*margin-left: 15%;
-margin-top: 4%;*/
+width: 40%;
+margin-left: 2%;
 font-family: 'Nunito', sans-serif;
 color: #585858;
+float:left;
 }
 
+
 #container_text{
-float: right;
+margin-left: 48%;
 width: 50%;
 border-radius: 5px;
 border: 1px solid black;
-/*margin-left:15%; 
-margin-right:15%;*/
 text-align: center;
 font-family: 'Kalam', cursive;
 font-size: 20px;
 background: white;
-}
-
-.bloc{
-width: 100%;
 }
 
 #sign{
@@ -41,6 +35,58 @@ color: #585858;
 h3{
 font-family: 'Nunito', sans-serif;
 color: #585858;
-margin-left: 5%;
-margin-top: 10%;
+margin-left: 7%;
+margin-top: 5%;
+margin-bottom: 3%;
 }
+
+#button{
+	width: 20%;
+}
+
+/* ---- Media Queries---- */ /*(pas fonctionnel)*/
+
+/*Affichage GSM portrait*/
+/*@media screen and (max-width: 479px)
+{
+	#container_form{
+	  width: 100%;
+	}
+	#container_text{
+	  width: 100%;
+	}
+}
+*/
+/*Affichage GSM paysage et tablette portrait*/
+/*@media screen and (min-width: 480px) and (max-width: 959px)
+{
+	#container_form{
+	  width: 40%;
+	}
+	#container_text{
+	  width: 50%;
+	}
+}*/
+
+/*Affichage tablette paysage et ordi petit à moyen*/
+/*@media screen and (min-width: 960px) and (max-width: 1280px)
+{
+	#container_form{
+	  width: 40%;
+	}
+	#container_text{
+	  width: 50%;
+	}
+}*/
+
+/*Affichage ordi moyen à grand*/
+/*@media screen and (min-width: 1281px)
+{
+	#container_form{
+	  width: 40%;
+	 }
+	#container_text{
+	  width: 50%;
+	}
+}
+*/

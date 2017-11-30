@@ -12,18 +12,26 @@ $date = date("d-m-Y");
 
 ?>
 
-<div class="bloc">
 	<div id="container_text">
 
-	<?php
+<!--<?php
+	$dear="Cher";
+	if($genre == "Madame"){$dear="Chère";}
+?>
+
+<br/><br/><?=$dear?> <?=$genre?> <?=$name_instit?>,
+<br/><br/><br/><br/>
+
+<?=$name_enfant?> ne pourra pas assister au cours en ce jour du <?=$date?>, car  -->
+
+<?php
 
 	if($genre == "Madame"){
-	echo ("<br/><br/>Chère " .$genre. " " .$name_instit. ",<br/><br/><br/><br/>");
+	echo ("<br/>Chère " .$genre. " " .$name_instit. ",<br/><br/><br/><br/>");
 	}
 	else{
-	echo ("<br/><br/>Cher " .$genre. " " .$name_instit. ",<br/><br/><br/><br/>");
+	echo ("<br/>Cher " .$genre. " " .$name_instit. ",<br/><br/><br/><br/>");
 	}
-
 	echo ($name_enfant. " ne pourra pas assister au cours en ce jour du " .$date. ", car ");
 
 	switch ($raison) {
@@ -37,20 +45,24 @@ $date = date("d-m-Y");
 		echo("la nouvelle saison de Stranger Things vient de sortir.<br/><br/><br/><br/>");
 		break;
 	}
+?>
 
-	if($genre == "Madame"){
-	echo("Veuillez agréer, Madame " .$name_instit. ", l’expression de mes salutations distinguées.<br/><br/><br/><br/><br/><br/>");
-	}
-	else{
-	echo("Veuillez agréer, Monsieur " .$name_instit. ", l’expression de mes salutations distinguées.<br/><br/><br/><br/><br/><br/>");
-	}
+Veuillez agréer, <?=$genre?> <?=$name_instit?>, l’expression de mes salutations distinguées.<br/><br/><br/>
 
-	echo "<div id='sign'>Signature:</div><br/><br/>";
+<div id='sign'>Signature:</div><br/><br/>
 
-	}
-
-	?>
-	
-	</div>
-	
 </div>
+<?php
+//autre manière d'écrire:
+	// if($genre == "Madame"){
+	// echo("Veuillez agréer, Madame " .$name_instit. ", l’expression de mes salutations distinguées.<br/><br/><br/><br/><br/><br/>");
+	// }
+	// else{
+	// echo("Veuillez agréer, Monsieur " .$name_instit. ", l’expression de mes salutations distinguées.<br/><br/><br/><br/><br/><br/>");
+	// }
+
+	// echo "<div id='sign'>Signature:</div><br/><br/>";
+
+}
+
+?>

@@ -17,67 +17,65 @@
      pas de faute d'orthographe.
      UX soignée: en faire un vrai produit? ( CSS + typographie + logo ) 
    -->
-   <!DOCTYPE html>
-   <html>
-   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" type="text/css" href="style.css"> 
-    <link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet"> 
-    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
-    <title>Générateur d'excuses pour les parents</title>
-  </head>
-  <body>
 
-    <h1>Générateur d'excuses</h1>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" type="text/css" href="style.css"> 
+<link href="https://fonts.googleapis.com/css?family=Nunito:300" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"> 
+<title>Générateur d'excuses pour les parents</title>
+</head> 
+<body>
 
-    <h3>Remplissez-les champs pour générer votre excuse</h3>
+  <h1>Générateur d'excuses</h1>
 
-    <div class="bloc">
-      <div id="container_form">
+  <h3>Remplissez-les champs pour générer votre excuse</h3>
 
-        <form action="index.php" method="get">
+  <div id="container_form">
 
-          <table>
-            <tr>
-              <td>
-               <label for="name_enfant">Nom de votre enfant :</label>
-             </td><td>
-               <input type="text" name="name_enfant" id="name_enfant"/>
-             </td></tr>
-             <tr><td>
-               <label for="name_instit">Nom de l'institutrice/teur :</label>
-             </td><td>
-               <input type="text" name="name_instit" id="name_instit"/>
-             </td></tr>
-           </table>  
+    <form action="index.php" method="get">
 
-           <input type="radio" name="genre" value="Madame"/>Madame
-           <input type="radio" name="genre" value="Monsieur"/>Monsieur<br/><br/>
-           
-           <label for="raison">Raison de l'absence : </label><br/><br/>
+      <table>
+        <tr><td>
+          <label for="name_enfant">Nom de votre enfant :</label>
+        </td><td>
+          <input type="text" name="name_enfant" id="name_enfant"/>
+        </td></tr><tr><td></td></tr><tr><td></td></tr>
+        <tr><td>
+          <label for="name_instit">Nom de l'institutrice/teur :</label>
+        </td><td>
+          <input type="text" name="name_instit" id="name_instit"/>
+        </td></tr>
+      </table>  
 
-           <input type="radio" name="raison" value="deces"/>Décès de l'animal de compagnie (ou d'un membre de la famille) <br/>
-           <label for="name_instit">Membre : </label>
-           <input type="text" name="membre" id="membre"/><br/><br/>
-           <input type="radio" name="raison" value="activite"/>Activité extra-scolaire importante <br/>
-           <label for="name_instit">Activité : </label>
-           <input type="text" name="activite" id="activite"/><br/><br/>
-           <input type="radio" name="raison" value="stranger"/>Stranger Things passe à la télé <br/><br/>
+      <input type="radio" name="genre" value="Madame"/>Madame
+      <input type="radio" name="genre" value="Monsieur"/>Monsieur<br/><br/><br/>
 
-           <input type="submit" value="Valider" id="button"/><br/><br/><br/>
+      <label for="raison">Raison de l'absence : </label><br/><br/>
 
-         </form>
+      <input type="radio" name="raison" value="deces"/>Décès de l'animal de compagnie (ou d'un membre de la famille) <br/><br/>
+      <label for="name_instit">Membre : </label>
+      <input type="text" name="membre" id="membre"/><br/><br/><br/>
+      <input type="radio" name="raison" value="activite"/>Activité extra-scolaire importante <br/><br/>
+      <label for="name_instit">Activité : </label>
+      <input type="text" name="activite" id="activite"/><br/><br/><br/>
+      <input type="radio" name="raison" value="stranger"/>Stranger Things passe à la télé <br/><br/><br/>
 
-       </div>
-     </div>  
+        <input type="submit" value="Valider" id="button"/><br/><br/><br/><br/><br/>
+    
+    </form>
 
-     <?php
+  </div>
 
-     include('excuse.php');
+  <?php
 
-     ?>
+  include('excuse.php');
 
-   </body>
-   </html>
+ ?> 
+     
+</body>
+</html>
